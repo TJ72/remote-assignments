@@ -1,0 +1,75 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 60px;
+  padding: 0 30px;
+  background-color: #ece9e9;
+}
+
+header h2 {
+  margin: 0;
+}
+
+.nav-icon img{
+  height: 60px;
+  width: 60px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+
+.banner {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(161, 243, 243);
+}
+
+.banner h2 {
+  margin: auto;
+}
+
+.container {
+  margin: 20px;
+}
+
+main {
+  padding: 0 20px;
+  width: 100%;
+}
+
+.content-box {
+  height: 150px;
+  width: 90%;
+  margin: 10px;
+  background-color: #869db7;
+  text-align: center;
+  padding: 10px;
+}
+
+.content-box a {
+  font-size: 20px;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  margin: 50px;
+  background-color: #bcd5ec;
+}
