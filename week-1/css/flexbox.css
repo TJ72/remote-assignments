@@ -5,6 +5,7 @@
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -12,9 +13,16 @@ header h2 {
   flex: 1;
 }
 
-main,
-.container,
-.banner {
+body,
+.banner,
+main h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,14 +42,15 @@ main,
 
 @media (min-width: 500px){
 
-  main {
+  .container {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .content-box {
-    flex-basis: 180px;
+    flex-basis: 40%;
     flex-grow: 1;
   }
 }
