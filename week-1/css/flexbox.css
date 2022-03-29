@@ -14,11 +14,17 @@ header h2 {
 }
 
 body,
-.banner,
-main h2{
+main h2,
+.banner {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -40,7 +46,7 @@ main h2{
   Media Queries
 ==================================== */
 
-@media (min-width: 500px){
+@media only screen and (min-device-width: 500px) {
 
   .container {
     display: flex;
@@ -55,7 +61,7 @@ main h2{
   }
 }
 
-@media (min-width: 800px){
+@media only screen and (min-device-width: 800px) {
 
   .nav-icon {
     display: none;
@@ -68,7 +74,15 @@ main h2{
   
 }
 
-@media (min-width: 1200px){
+@media only screen and (min-device-width: 1200px) {
+
+  main {
+    align-items: center;
+  }
+
+  .container {
+    width: 1200px;
+  }
   
   .content-box {
     max-width: 600px;
