@@ -42,7 +42,7 @@ function args_(num1, num2, op) {
 let args = new args_(3, 4, '+');
 
 // 3. Using ES6 classes to create objects
-class argGenerator {
+class ArgGenerator {
     constructor(num1, num2, op) {
         this.n1 = num1;
         this.n2 = num2;
