@@ -1,0 +1,107 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h2 {
+  flex: 1;
+}
+
+.nav-hidden {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-hidden .items {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+body,
+main h2,
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* @media only screen and (min-device-width: 500px) */
+@media only screen and (min-width: 500px) {
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content-box {
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+}
+
+/* @media only screen and (min-device-width: 800px)  */
+@media only screen and (min-width: 800px) {
+
+  .nav-icon {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+  }
+  
+}
+
+/* @media only screen and (min-device-width: 1200px) */
+@media only screen and (min-width: 1200px) {
+
+  main {
+    align-items: center;
+  }
+
+  .container {
+    width: 1200px;
+  }
+  
+  .content-box {
+    max-width: 600px;
+  }
+
+} 

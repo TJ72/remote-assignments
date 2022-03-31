@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RWD Page Layout in pure HTML/CSS</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <!-- floating mobile menu -->
+    <nav class="nav-hidden">
+      <div class="items">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+      </div>
+      <div class="X">X</div>
+    </nav>
+
+    <header>
+      <h2>Website Title/Logo</h2>
+      <!-- navigation -->
+      <nav class="nav-icon"><img src="img/icon.png" alt="menu trigger icon"></nav>
+      <nav class="nav-menu">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+      </nav>
+    </header>
+
+    <!-- banner -->
+    <div class="banner">
+      <h1>Welcome Message</h1>
+    </div>
+
+    <main>
+      <h2>Section Title</h2>
+      <!-- content-box -->
+      <div class="container">
+        <div class="content-box"><a>Content Box 1</a></div>
+        <div class="content-box"><a>Content Box 2</a></div>
+        <div class="content-box"><a>Content Box 3</a></div>
+        <div class="content-box"><a>Content Box 4</a></div>
+      </div>
+    
+      <!-- button -->
+      <div class="button">
+        <div>Call to Action</div>
+      </div>
+
+      <!-- content-box -->
+      <div id="hidden-box" class="container">
+        <div class="content-box"><a>Content Box 5</a></div>
+        <div class="content-box"><a>Content Box 6</a></div>
+        <div class="content-box"><a>Content Box 7</a></div>
+        <div class="content-box"><a>Content Box 8</a></div>
+      </div>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
