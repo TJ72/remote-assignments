@@ -50,4 +50,4 @@ class ArgGenerator {
     }
 }
 
-let args = new argGenerator(3, 4, '+');
+let args = new ArgGenerator(3, 4, '+');
