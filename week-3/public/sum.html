@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Summation</title>
+</head>
+
+<body>
+  <h1>A simple caculator to help you get the summation!</h1>
+  <form id="number-input">
+    <h2><label>Please Enter an integer:</label>
+    <input type="text" name="number" id="number"></h2>
+  </form>
+  <button type="submit" id="sum-button">Submit</button>
+  <div id="result"></div>
+</body>
+
+
+<script>
+    function getSum(number) {
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    document.getElementById('result').innerHTML = xhr.responseText;
+                } else {
+                    alert(xhr.statusText);
+                }
+            }
+        }
+        xhr.open('GET', `/getData?number=${number}`);
+        xhr.send();
+    };
+
+    const button = document.getElementById('sum-button');
+    button.addEventListener('click', () => {
+        let number = document.getElementById('number').value;
+        document.getElementById('number-input').reset();
+        getSum(number)
+    });
+
+</script>
