@@ -15,13 +15,13 @@ app.get('/', (req, res) => {
 
 app.get('/getData', (req, res) => {
     const {number} = req.query;
+    let num = Number(number);
 
     if (!number) {
         return res.send('<h1>Lack of Parameter</h1>');
-    } else if (isNaN(number) || Number(number) <= 0) {
+    } else if (!Number.isInteger(num) || num <= 0) {
         return res.send('<h1>Wrong Parameter</h1>');
     } else {
-        let num = Number(number);
         const sum = ((1 + num) * num) / 2;
         return res.send(`<h1>The sum of first ${num} integers is ${Number(sum)}</h1>`);
     }
