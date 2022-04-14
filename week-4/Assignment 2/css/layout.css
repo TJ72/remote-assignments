@@ -1,0 +1,32 @@
+* {
+  font-family: sans-serif;
+}
+
+header {
+  color: rgb(189, 60, 60);
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: 1.5px 1.5px 5px gray;
+}
+
+.product_info {
+  display: flex;
+  flex-grow: 1;
+  font-size: 1.5em;
+  height: 2.5em;
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+}

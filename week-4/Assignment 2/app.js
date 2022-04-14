@@ -15,35 +15,28 @@ function ajax(src, callback) {
     xhr.send();
 }
 
-function render(data){
+function render(data) {
+    const productList = document.getElementById('product-list');
     const productData = JSON.parse(data);
-    const productsList = document.createElement('ul');
-    productsList.style.cssText = 'list-style-type: none';
-    productData.forEach(product => {
-        const productName = constructListItem(product, 'name');
-        productsList.appendChild(productName);
-
-        const productInfo = document.createElement('ul');
-        const productDesc = constructListItem(product, 'description');
-        const productPrice = constructListItem(product, 'price');
-        productInfo.appendChild(productDesc);
-        productInfo.appendChild(productPrice);
-
-        productsList.append(productInfo);
-    });
-    document.body.appendChild(productsList);
+    productData.map(product => {
+        const productDiv = document.createElement('div');
+        productDiv.className = 'product';
+        const name = createDivTag(product, 'name');
+        const description = createDivTag(product, 'description');
+        const price = createDivTag(product, 'price');
+        [name, description, price].forEach(info => productDiv.appendChild(info));
+        productList.appendChild(productDiv);
+    })
 }
 
-function constructListItem(product, property) {
-    const listItem = document.createElement('li');
-    if (property !== 'name') {
-        var listContent = document.createTextNode(`${property}: ${product[property]}`);
-    } else {
-        var listContent = document.createTextNode(`${product[property]}`);
-    }
-    listItem.appendChild( listContent );
-    return listItem;
+function createDivTag(product, info) {
+    const divTag = document.createElement('div');
+    divTag.className = 'product_info';
+    const divContent = document.createTextNode(`${product[info]}`);
+    divTag.appendChild(divContent);
+    return divTag;
 }
+
 
 // Sample Input:
 ajax(
