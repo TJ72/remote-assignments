@@ -1,0 +1,105 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background-color: #ece9e9;
+}
+
+header h2 {
+  margin: 0;
+  padding: 30px;  
+}
+
+.nav-icon img {
+  height: 60px;
+  width: 60px;
+}
+
+.nav-hidden {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  background-color: white;
+  border-left: 1px gray solid;
+  box-shadow: 3px 3px 12px gray;
+  z-index: 1;
+}
+
+.nav-hidden .X{
+  font-size: 20px;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+
+.banner {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(161, 243, 243);
+}
+
+.banner h1 {
+  margin: auto;
+}
+
+.container {
+  margin: 10px;
+}
+
+main {
+  width: 100%;
+}
+
+main h2 {
+  width: 100%;
+  height: 60px;
+  margin-bottom: auto;
+}
+
+.content-box {
+  height: 150px;
+  /* width: 90%; */
+  width: 300px;
+  margin: 10px;
+  background-color: #869db7;
+  text-align: center;
+  padding: 10px;
+}
+
+.content-box a {
+  font-size: 20px;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #bcd5ec;
+  position: relative;
+}
+
+/* #hidden-box {
+  display: none;
+} */
