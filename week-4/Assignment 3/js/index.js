@@ -16,7 +16,7 @@ const Header = (props) => {
   return (
     <header>
       <h2> Website Title/Logo </h2>
-      <nav className="nav-icon" onClick={props.openMenu}><img src='./img/icon.png' alt="menu trigger icon"/></nav>
+      <nav className="nav-icon" onClick={props.openMenu}><img src='../img/icon.png' alt="menu trigger icon"/></nav>
       <nav className="nav-menu">
         <a href="#"> Item 1 </a>
         <a href="#"> Item 2 </a>
@@ -65,19 +65,10 @@ class Main extends React.Component {
     show: false
   };
 
-  handleBoxDisplay = () => {
-    this.setState( prevState => {
-        if (!prevState.show) {
-          return {
-            show: true
-          }
-        } else {
-          return {
-            show: false
-          }
-        }
+  handleBoxDisplay = () =>
+    this.setState({
+      show: !this.state.show
     });
-  }
 
   render() {
     return (
