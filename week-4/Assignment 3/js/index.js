@@ -16,7 +16,7 @@ const Header = (props) => {
   return (
     <header>
       <h2> Website Title/Logo </h2>
-      <nav className="nav-icon" onClick={props.openMenu}><img src='./img/icon.png' alt="menu trigger icon"/></nav>
+      <nav className="nav-icon" onClick={props.openMenu}><img src='../img/icon.png' alt="menu trigger icon"/></nav>
       <nav className="nav-menu">
         <a href="#"> Item 1 </a>
         <a href="#"> Item 2 </a>
